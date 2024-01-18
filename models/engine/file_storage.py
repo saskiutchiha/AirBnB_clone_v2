@@ -26,7 +26,7 @@ class FileStorage:
             json.dump(temp, f)
     def delete(self, obj=None):
         """delete obj from __objects"""
-        if obj != None:
+        if obj is not None:
             for i in __objects:
                 if i == obj:
                     __objects.pop(obj)
